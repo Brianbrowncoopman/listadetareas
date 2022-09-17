@@ -9,7 +9,7 @@ const [input, setInput] = useState('');
 const manejarCambio = e =>{
   setInput(e.target.value);
   
-}
+};
 
 const manejarEnvio = e => {
   e.preventDefault();
@@ -18,7 +18,7 @@ const manejarEnvio = e => {
     id: uuidv4(),
     texto: input,
     completada: false
-  }
+  };
 
   props.onSubmit(tareaNueva);
 }
